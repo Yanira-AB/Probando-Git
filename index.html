@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Secret Note</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <header>
+      <p class="header">Secret Note</p>
+    </header>
+    <main id="noteSecrets">
+      <div id="firstSection" class="note">
+        <img class="sumSymbol" alt="" src="imagenes/mas.png">
+        <button id="btnNewNote" class="buttonNewNote" type="button" name="button"> Crear nueva nota ...</button>
+      </div>
+      <form id="note" action="index.html" method="post">
+        <textarea value="Hola" id="textTitle" placeholder="Título" class="titleNote" name="name" rows="1" cols="80"></textarea>
+        <textarea id="textNote" placeholder="Escribe aquí..." class="textNote" rows="8" name="name" rows="8" cols="80"></textarea>
+        <button id="btnEncryptOne" class="buttonFunction" type="button" name="button">Encriptar</button>
+        <button id="btnSaveNote" class="buttonFunction" type="button"  name="button">Guardar</button>
+      </form>
+      <section id="sectionKey">
+        <div class="textFunction">
+          <p>* Escoge un número de 2 dígitos como clave única para ésta nota.</p>
+          <span>Clave :</span><input id="key" class="keyInput" type="text" name="" value="">
+        </div>
+        <button id="btnEncryptDone" class="buttonFunction" type="button" name="button">Encriptar</button>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
